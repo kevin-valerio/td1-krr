@@ -1,0 +1,13 @@
+Yann LeCun, born on July 8, 1960, is a French-American computer scientist working primarily in the fields of machine learning, computer vision, mobile robotics, and computational neuroscience. He is the Silver Professor of the Courant Institute of Mathematical Sciences at New York University, and Vice President, Chief AI Scientist at Facebook.
+
+He is well known for his work on optical character recognition and computer vision using convolutional neural networks (CNN), and is a founding father of convolutional nets. He is also one of the main creators of the DjVu image compression technology (together with Léon Bottou and Patrick Haffner). He co-developed the Lush programming language with Léon Bottou.
+
+He is co-recipient of the 2018 ACM A.M. Turing Award for his work in deep learning.
+
+Awards and honors
+
+LeCun is a member of the US National Academy of Engineering, the recipient of the 2014 IEEE Neural Network Pioneer Award and the 2015 PAMI Distinguished Researcher Award.
+
+In 2017, he declined an invitation to lecture at the King Abdullah University of Science and Technology in Saudi Arabia because he believed he would be considered a terrorist in the country in view of his atheism. In September 2018, he received the Harold Pender Award given by the University of Pennsylvania. In October 2018, he received a Doctor Honoris Causa degree from EPFL.
+
+In March 2019, LeCun was awarded the Turing Prize, sharing it with Yoshua Bengio and Geoffrey Hinton.

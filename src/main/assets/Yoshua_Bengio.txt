@@ -1,0 +1,12 @@
+Yoshua Bengio (born 1964 in Paris, France) is a Canadian computer scientist, most noted for his work on artificial neural networks and deep learning. He was awarded the 2018 Turing Award for his work in deep learning. He is a professor at the Department of Computer Science and Operations Research at the Université de Montréal and scientific director of the Montreal Institute for Learning Algorithms (MILA).
+
+Career
+Bengio received his Bachelor of Engineering (electrical engineering), Master of Science (computer science) and PhD (computer science) from McGill University. He was a post-doctoral fellow at MIT (under Michael I. Jordan) and AT&T Bell Labs. Bengio has been a faculty member at the Université de Montréal since 1993, he heads the MILA (Montreal Institute for Learning Algorithms) and he is co-director of the Learning in Machines & Brains project of the Canadian Institute for Advanced Research.
+
+Along with Geoffrey Hinton and Yann LeCun, Yoshua is considered by Cade Metz one of the three people most responsible for the advancement of deep learning during the 1990s and 2000s. Among the computer scientists with an h-index of at least 100, Bengio is the one with the most recent citations per day, according to MILA.
+
+In October 2016, Bengio co-founded Element AI, a Montreal-based artificial intelligence incubator that turns AI research into real-world business applications. In May 2017, Bengio announced that he was joining Montreal-based legal tech startup Botler AI, as a strategy adviser. Bengio currently serves as scientific and technical advisor for Recursion Pharmaceuticals.
+
+Awards
+
+In 2017, Bengio was named an Officer of the Order of Canada. The same year, he was nominated Fellow of the Royal Society of Canada and received the Marie-Victorin Quebec Prize. Together with Geoffrey Hinton and Yann LeCun, Bengio won the 2018 Turing Award.
