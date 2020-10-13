@@ -3,8 +3,8 @@ import java.io.File
 
 fun main(args: Array<String>) {
     var text = ""
-    val entities: MutableList<String> =
-        readFileAndExtractEntities("src/main/assets/entities.txt") as MutableList<String>
+    val entities: MutableList<Entitie> =
+        readFileAndExtractEntities("src/main/assets/entities.txt") as MutableList<Entitie>
     val geoffrey: MutableList<String> =
         readFileAsLinesUsingUseLines("src/main/assets/Geoffrey Hinton.txt") as MutableList<String>
 
@@ -12,10 +12,11 @@ fun main(args: Array<String>) {
     println(text)
 }
 
-fun buildSentenceFromWord(word: String, entities: List<String>): String {
+fun buildSentenceFromWord(word: String, entities: List<Entitie>): String {
     var tmp: String = word
     entities.forEach {
-        if (it.contains(word) && word.length >= 4) tmp = "<entity name=\"https://en.wikipedia.org/wiki/" + it.replace(" ", "_") + "\">" + word + "</entity>"
+        if (it.name.contains(word) && word.length >= 4) tmp =
+            "<entity name=\"" + it.wiki + "\">" + it.name + "</entity>"
     }
 
     return tmp
@@ -23,12 +24,12 @@ fun buildSentenceFromWord(word: String, entities: List<String>): String {
 
 fun readFileLineByLineUsingForEachLine(fileName: String) = File(fileName).forEachLine { println(it) }
 
-fun readFileAndExtractEntities(fileName: String): List<String> = File(fileName).useLines {
-    var list = it.toList()
-    list = list.map { it2 ->
-        it2.split("/").last().replace("_"," ")
+fun readFileAndExtractEntities(fileName: String): List<Entitie> = File(fileName).useLines {
+    val entities = mutableListOf<Entitie>()
+    it.toList().map { it2 ->
+        entities.add(Entitie(it2, it2.split("/").last().replace("_", " ")))
     }
-    list
+    entities
 }
 
 fun readFileAsLinesUsingUseLines(fileName: String): List<String> = File(fileName).useLines {
