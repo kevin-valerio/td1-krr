@@ -1,3 +1,4 @@
+import org.jsoup.Jsoup
 import java.io.File
 
 
@@ -7,6 +8,9 @@ fun main(args: Array<String>) {
         readFileAndExtractEntities("src/main/assets/entities.txt") as MutableList<Entitie>
     val geoffrey: MutableList<String> =
         readFileAsLinesUsingUseLines("src/main/assets/Geoffrey Hinton.txt") as MutableList<String>
+
+//    println(getWikiTitle("https://fr.wikipedia.org/wiki/Kawasaki_ZRX"))
+
 
     geoffrey.forEach { line -> line.split(" ").forEach { text += (buildSentenceFromWord(it, entities) + " ") } }
     println(text)
@@ -34,4 +38,9 @@ fun readFileAndExtractEntities(fileName: String): List<Entitie> = File(fileName)
 
 fun readFileAsLinesUsingUseLines(fileName: String): List<String> = File(fileName).useLines {
     it.toList()
+}
+
+@Throws(Exception::class)
+fun getWikiTitle(url: String?): String {
+    return Jsoup.connect(url).get().select("#firstHeading").first().childNodes().get(0).toString()
 }
