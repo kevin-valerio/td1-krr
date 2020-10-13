@@ -20,7 +20,7 @@ fun buildSentenceFromWord(word: String, entities: List<Entitie>): String {
     var tmp: String = word
     entities.forEach {
         if (it.name.contains(word) && word.length >= 4) tmp =
-            "<entity name=\"" + it.wiki + "\">" + it.name + "</entity>"
+            "<entity name=\"" + it.wiki + "\">" + word + "</entity>"
     }
 
     return tmp
